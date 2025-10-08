@@ -4,8 +4,8 @@ metadata:
   name: my-example-appset
   namespace: argocd
 spec:
-#  syncPolicy:
-#    preserveResourcesOnDeletion: true
+  syncPolicy:
+    preserveResourcesOnDeletion: true
   goTemplate: true
   goTemplateOptions: ["missingkey=error"]
   generators:
